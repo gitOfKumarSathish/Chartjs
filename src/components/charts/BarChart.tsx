@@ -9,6 +9,7 @@ HighchartsMore(Highcharts);
 const options = {
     chart: {
         type: "line",
+        // type: "bar",
         zoomType: "xy",
     },
     title: {
