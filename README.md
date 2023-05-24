@@ -1,5 +1,5 @@
 
-# Rich Data Table
+# Real-time Time-Series Graph with React and Highcharts in TypeScript.
 
 This is a simple real-time, time-series, Bar, HeatMap graph created with React and Highcharts. It displays random data points on the y-axis in real time, with each new data point added to the chart every second.The code is written in TypeScript.
 
