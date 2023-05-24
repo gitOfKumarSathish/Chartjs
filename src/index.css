@@ -78,5 +78,5 @@ text.highcharts-credits {
 }
 
 path.highcharts-point.highcharts-color-0 {
-  stroke: none !important;
+  /* stroke: none !important; */
 }

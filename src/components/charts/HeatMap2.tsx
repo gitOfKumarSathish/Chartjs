@@ -15,6 +15,9 @@ class HeatmapChart2 extends Component {
                 marginBottom: 80,
                 // plotBorderWidth: 0
             },
+            boost: {
+                useGPUTranslations: true
+            },
             title: {
                 text: 'Heatmap Chart with Multiple Colors'
             },
@@ -56,7 +59,8 @@ class HeatmapChart2 extends Component {
                 }
             },
             series: [{
-                borderWidth: 1,
+                // borderWidth: 1,
+                turboThreshold: 0, // Set turboThreshold to 0 to disable threshold
                 data: [
                     [0, 0, 0.1],
                     [0, 1, 0.2],

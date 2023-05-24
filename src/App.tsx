@@ -9,12 +9,16 @@ import SpectrogramChart from './components/charts/Spectogram';
 import WaterfallChart from './components/charts/WaterfallChart';
 import TimelineChart from './components/charts/TimelineChart';
 import HeatmapChart2 from './components/charts/HeatMap2';
+import LargeHeatmapChart from './components/charts/LargeHeatMap';
+import LargeHeatMap2 from './components/charts/LargeHeatMap2';
 
 function App() {
 
   return (
     <>
       {/* <HeatmapHistogramChart /> */}
+      <LargeHeatMap2 />
+      {/* <LargeHeatmapChart /> */}
       <HeatmapChart />
       <HeatmapChart2 />
       <TimelineChart />
