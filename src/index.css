@@ -76,3 +76,7 @@ button:focus-visible {
 text.highcharts-credits {
   display: none !important;
 }
+
+path.highcharts-point.highcharts-color-0 {
+  stroke: none !important;
+}

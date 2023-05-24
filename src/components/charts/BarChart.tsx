@@ -8,7 +8,7 @@ HighchartsMore(Highcharts);
 
 const options = {
     chart: {
-        type: "line",
+        type: "spline",
         // type: "bar",
         zoomType: "xy",
     },
