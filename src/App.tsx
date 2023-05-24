@@ -4,9 +4,9 @@ import HeatmapHistogramChart from './pages/Check';
 import HeatmapChart from './components/charts/HeatMap';
 import HistogramChart from './components/charts/Histogram';
 import RealTimeChart from './components/charts/RealTimeChart';
+import BarChart from './components/charts/BarChart';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
       <HeatmapChart />
       <HistogramChart />
       <RealTimeChart />
+      <BarChart />
     </>
   );
 }

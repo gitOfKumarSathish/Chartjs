@@ -31,8 +31,10 @@ const options = {
     },
     colorAxis: {
         min: 0,
-        minColor: '#FFFFFF',
-        maxColor: Highcharts.getOptions()?.colors?.[0] || '#FF0000'
+        // minColor: '#FFFFFF',
+        // maxColor: Highcharts.getOptions()?.colors?.[0] || '#FF0000'
+        minColor: '#FF0000', // Red
+        maxColor: '#00FF00' // Green
 
     },
     series: [{

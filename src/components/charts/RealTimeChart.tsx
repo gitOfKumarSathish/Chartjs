@@ -5,7 +5,7 @@ import HighchartsReact from "highcharts-react-official";
 // Set up the initial options for the chart
 const initialOptions = {
     chart: {
-        type: "spline",
+        type: "line",
         animation: Highcharts.svg, // don't animate in old IE
         marginRight: 10,
         zoomType: "xy",
