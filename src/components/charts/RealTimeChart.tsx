@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, memo } from "react";
+import { useState, useRef, useEffect, memo } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
@@ -20,6 +20,7 @@ const initialOptions = {
         tickPixelInterval: 150,
     },
     yAxis: {
+        type: 'logarithmic',
         title: {
             text: "Value",
         },
@@ -32,7 +33,7 @@ const initialOptions = {
         ],
     },
     tooltip: {
-        formatter() {
+        formatter(): string {
             return `<b>${Highcharts.dateFormat("%Y-%m-%d %H:%M:%S", this.x)}</b><br/><b>${this.y}</b>`;
         },
     },
@@ -50,10 +51,10 @@ const initialOptions = {
     ],
 };
 
-const generateDataPoint = (): number => Math.floor(Math.random() * 10);
+const generateDataPoint = (): number => Math.floor(Math.random() * 100);
 
 const RealTimeChart = () => {
-    const [options, setOptions] = useState(initialOptions);
+    const [options, setOptions] = useState<any>(initialOptions);
     const chartRef = useRef<Highcharts.Chart | null>(null);
 
     useEffect(() => {
@@ -61,14 +62,14 @@ const RealTimeChart = () => {
         const chartInterval = setInterval(() => {
             const now = Date.now();
             const newDataPoint: number = generateDataPoint();
-            setOptions((prevOptions) => ({
+            setOptions((prevOptions: { series: { data: any[]; }[]; }) => ({
                 ...prevOptions,
                 series: [{
                     data: [...prevOptions.series[0].data, [now, newDataPoint]]
                 }]
             }));
             if (chartRef.current) {
-                // chartRef.current.series[0].addPoint([now, newDataPoint], true, true);
+                //     // chartRef.current.series[0].addPoint([now, newDataPoint], true, true);
             }
         }, 1000);
 

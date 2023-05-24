@@ -13,7 +13,7 @@ function App() {
       {/* <HeatmapHistogramChart /> */}
       <HeatmapChart />
       <HistogramChart />
-      {/* <RealTimeChart /> */}
+      <RealTimeChart />
     </>
   );
 }
