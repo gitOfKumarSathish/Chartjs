@@ -76,3 +76,9 @@ button:focus-visible {
 text.highcharts-credits {
   display: none !important;
 }
+
+/* div#root {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+} */
