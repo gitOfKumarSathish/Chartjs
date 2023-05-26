@@ -26,6 +26,7 @@ const options = {
     },
     tooltip: {
         shared: true,
+        crosshairs: true
     },
     series: [
         {

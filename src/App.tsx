@@ -11,12 +11,14 @@ import TimelineChart from './components/charts/TimelineChart';
 import HeatmapChart2 from './components/charts/HeatMap2';
 import LargeHeatmapChart from './components/charts/LargeHeatMap';
 import LargeHeatMap2 from './components/charts/LargeHeatMap2';
+import Annotation from './components/charts/Annotation';
 
 function App() {
 
   return (
     <>
       {/* <HeatmapHistogramChart /> */}
+      <Annotation />
       <LargeHeatMap2 />
       {/* <LargeHeatmapChart /> */}
       <HeatmapChart />
