@@ -7,6 +7,7 @@ import RealTimeChart from './components/charts/RealTimeChart';
 import BarChart from './components/charts/BarChart';
 import Annotation from './components/charts/Annotation';
 import BarAnnotation from './components/charts/BarAnnotation';
+import XRangeChart from './components/charts/Xseries';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <HistogramChart />
       <RealTimeChart />
       <BarChart />
+      <XRangeChart />
     </>
   );
 }
