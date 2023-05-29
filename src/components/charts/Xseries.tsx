@@ -49,6 +49,7 @@ const XRangeChart = () => {
                 x2: Date.UTC(2014, 11, 2),
                 y: 0,
                 title: 'Project',
+                color: 'red',
                 // title: {
                 //     text: 'Check'
                 // },
