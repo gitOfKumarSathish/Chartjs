@@ -39,6 +39,7 @@ const XRangeChart = () => {
         },
         series: [{
             name: 'Project 1',
+            title: 'Project',
             // pointPadding: 0,
             // groupPadding: 0,
             borderColor: 'gray',
@@ -47,11 +48,16 @@ const XRangeChart = () => {
                 x: Date.UTC(2014, 10, 21),
                 x2: Date.UTC(2014, 11, 2),
                 y: 0,
-                // partialFill: 0.25
+                title: 'Project',
+                // title: {
+                //     text: 'Check'
+                // },
+                partialFill: 0.25
             }, {
                 x: Date.UTC(2014, 11, 2),
                 x2: Date.UTC(2014, 11, 5),
-                y: 1
+                y: 1,
+                title: 'true',
             }, {
                 x: Date.UTC(2014, 11, 8),
                 x2: Date.UTC(2014, 11, 9),
@@ -59,7 +65,8 @@ const XRangeChart = () => {
             }, {
                 x: Date.UTC(2014, 11, 9),
                 x2: Date.UTC(2014, 11, 19),
-                y: 1
+                y: 1,
+                title: 'false',
             }, {
                 x: Date.UTC(2014, 11, 10),
                 x2: Date.UTC(2014, 11, 23),
@@ -67,10 +74,14 @@ const XRangeChart = () => {
             }, {
                 x: Date.UTC(2014, 11, 15),
                 x2: Date.UTC(2014, 11, 22),
-                y: 2
+                y: 2,
+                title: 'completed',
             }],
             dataLabels: {
-                enabled: true
+                enabled: true,
+                formatter: function () {
+                    return this.point.title;
+                }
             }
         }]
 
