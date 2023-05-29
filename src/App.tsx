@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='grid' style={{ gridTemplateColumns: `repeat(${gridCountForEachRow}, 1fr)` }}>
-      <HeatmapHistogramChart />
+      {/* <HeatmapHistogramChart /> */}
       <BarAnnotation />
       <Annotation />
       <HeatmapChart />
