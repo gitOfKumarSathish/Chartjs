@@ -13,9 +13,9 @@ const options = {
         zoomType: 'x',
         panning: true,
         panKey: 'shift',
-        scrollablePlotArea: {
-            minWidth: 600
-        }
+        // scrollablePlotArea: {
+        //     minWidth: 600
+        // }
     },
 
     caption: {

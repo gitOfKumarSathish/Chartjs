@@ -12,7 +12,7 @@ const options = {
         marginTop: 40,
         // marginBottom: 80,
         plotBorderWidth: 1,
-        height: "60%",
+        // height: "60%",
     },
     title: {
         text: 'Sales per employee per weekday'
@@ -76,7 +76,10 @@ const options = {
 };
 
 const HeatmapChart: React.FC = () => (
-    <HighchartsReact highcharts={Highcharts} options={options} />
+    <div>
+        <HighchartsReact highcharts={Highcharts} options={options} />
+    </div>
+
 );
 
 export default memo(HeatmapChart);

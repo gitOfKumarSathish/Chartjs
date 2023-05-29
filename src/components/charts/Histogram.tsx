@@ -9,7 +9,7 @@ HighchartsHistogram(Highcharts);
 const options = {
     chart: {
         type: 'histogram',
-        height: "60%",
+        // height: "60%",
         marginTop: 40,
         zoomType: "xy",
         panning: true,
@@ -101,7 +101,10 @@ const options = {
 };
 
 const HistogramChart: React.FC = () => (
-    <HighchartsReact highcharts={Highcharts} options={options} />
+    <div>
+
+        <HighchartsReact highcharts={Highcharts} options={options} />
+    </div>
 );
 
 export default memo(HistogramChart);

@@ -71,7 +71,10 @@ const BarChart = () => {
     };
 
     return (
-        <HighchartsReact highcharts={Highcharts} options={options} ref={chartRef} />
+        <div>
+
+            <HighchartsReact highcharts={Highcharts} options={options} ref={chartRef} />
+        </div>
     );
 };
 

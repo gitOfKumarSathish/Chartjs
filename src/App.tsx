@@ -10,10 +10,11 @@ import BarAnnotation from './components/charts/BarAnnotation';
 import XRangeChart from './components/charts/Xseries';
 
 function App() {
+  const gridCountForEachRow = 3;
 
   return (
-    <>
-      {/* <HeatmapHistogramChart /> */}
+    <div className='grid' style={{ gridTemplateColumns: `repeat(${gridCountForEachRow}, 1fr)` }}>
+      <HeatmapHistogramChart />
       <BarAnnotation />
       <Annotation />
       <HeatmapChart />
@@ -21,7 +22,7 @@ function App() {
       <RealTimeChart />
       <BarChart />
       <XRangeChart />
-    </>
+    </div>
   );
 }
 
